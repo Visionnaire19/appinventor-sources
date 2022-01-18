@@ -174,6 +174,20 @@
     <!-- Add extension libraries here -->
     <!-- Example: <copy toFile="${public.deps.dir}/my-dependency.jar" file="${lib.dir}/my-dependency/my-dependency-1.0.0.jar" /> -->
     <!-- Remember to include my-dependency.jar in the @UsesLibraries annotation in the extension -->
+
+<!--    Jean Ghislain Billa Changes-->
+    <copy toFile="${public.deps.dir}/GoogleMlKit/textRecognition.aar" file="${lib.dir}/MlKit/play-services-mlkit-text-recognition-common-16.1.0.aar" />
+    <copy toFile="${public.deps.dir}/GoogleMlKit/textRecognition.jar" file="${lib.dir}/MlKit/play-services-mlkit-text-recognition-common-16.1.0.jar" />
+
+    <copy toFile="${public.deps.dir}/GoogleMlKit/textRecognitionCommon.aar" file="${lib.dir}/MlKit/common-17.5.0.aar" />
+    <copy toFile="${public.deps.dir}/GoogleMlKit/textRecognitionCommon.jar" file="${lib.dir}/MlKit/common-17.5.0.jar" />
+
+    <copy toFile="${public.deps.dir}/GoogleMlKit/textRecognitionLatin.aar" file="${lib.dir}/MlKit/text-recognition-16.0.0-beta2.aar" />
+    <copy toFile="${public.deps.dir}/GoogleMlKit/textRecognitionLatin.jar" file="${lib.dir}/MlKit/text-recognition-16.0.0-beta2.jar" />
+
+    <copy toFile="${public.deps.dir}/GoogleMlKit/textRecognitionVision.aar" file="${lib.dir}/MlKit/vision-common-16.7.0.aar" />
+    <copy toFile="${public.deps.dir}/GoogleMlKit/textRecognitionVision.jar" file="${lib.dir}/MlKit/vision-common-16.7.0.jar" />
+
   </target>
 
   <path id="AndroidRuntime.path">
@@ -596,6 +610,10 @@
       <libraryjar file="${public.deps.dir}/guava-14.0.1.jar" />
       <libraryjar file="${public.deps.dir}/Barcode.jar" />
       <libraryjar file="${public.deps.dir}/QRGenerator.jar" />
+      <libraryjar file="${public.deps.dir}/GoogleMlKit/textRecognition.jar"/>
+      <libraryjar file="${public.deps.dir}/GoogleMlKit/textRecognitionCommon.jar"/>
+      <libraryjar file="${public.deps.dir}/GoogleMlKit/textRecognitionLatin.jar"/>
+      <libraryjar file="${public.deps.dir}/GoogleMlKit/textRecognitionVision.jar"/>
       <!-- Android Runtime -->
       <libraryjar file="${public.build.dir}/AndroidRuntime.jar" />
 
